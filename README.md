@@ -26,8 +26,8 @@ To install the project and its dependencies, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
-   cd <repository-name>
+   git clone git@github.com:coyot1904/Micro-Frontend-Application.git
+   cd Micro-Frontend-Application
    ```
 
 2. **Enable Corepack (if needed):**
