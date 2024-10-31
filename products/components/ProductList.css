@@ -1,0 +1,150 @@
+/* ProductList.css */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 15px;
+  width: 300px;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  color: #007bff;
+  margin: 5px 0;
+}
+
+.add-to-cart {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: #218838;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.controls input {
+  border: 1px solid #ddd;
+}
+
+.controls select {
+  border: 1px solid #ddd;
+  float: right;
+}
+
+.controls input,
+.controls select {
+  padding: 8px;
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.cart-icon-container {
+  position: relative;
+  cursor: pointer;
+  z-index: 100000000000;
+  margin-left: 0px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: -10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-icon-container svg {
+  font-size: 24px;
+  color: #333;
+}
+
+.cart-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+.quantity-controls1 {
+  align-items: center;
+  margin-top: 10px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.quantity-controls1 button {
+  margin: 0 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .product-card {
+    width: 90%; /* Take more width on smaller screens */
+  }
+}
+
+@media (min-width: 600px) {
+  /* Adjust layout for screens wider than 600px */
+  .controls input {
+    width: 200px;
+    margin-right: auto;
+  }
+
+  .controls select {
+    width: 200px;
+    margin-left: auto;
+  }
+
+  .cart-icon-container {
+    margin-left: 20px; /* Adds space next to dropdown */
+  }
+}
