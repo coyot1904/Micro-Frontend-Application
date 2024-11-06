@@ -1,6 +1,6 @@
 # Ignore node_modules in parent and child apps
 /node_modules
-/product/node_modules
+/products/node_modules
 /auth/node_modules
 /orders/node_modules
 
